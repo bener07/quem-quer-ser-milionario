@@ -13,3 +13,5 @@ Testa o teu conhecimento sobre Minecraft e vê se estás á altura de ganhar 1 m
 9. **oitava_pergunta.h**        - Pergunta: ```No mincraft vanilla qual o Mob mais Forte?```;
 10. **nona_pergunta.h**         - Pergunta: ```Qual foi o primeiro nome do minecraft?```;
 11. **decima_pergunta.h**       - Pergunta: ```Qual o animal mais adorado do jogo?```;
+12. **painel.h** - Onde se encontra a função para escrever um painel com pontos e nome;
+13. **funcoes.h** - Encontram-se fuções para mexer com strings ou numeros por ai fora;
