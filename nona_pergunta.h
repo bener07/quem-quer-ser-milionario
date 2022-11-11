@@ -6,28 +6,32 @@ int nona_pergunta(int pontos){
         char r;
         puts("Qual foi o primeiro nome do minecraft?");
         puts("A - Craft Game");
-        puts("B - World craft");
-        puts("C - Cave game");
-        puts("D - Notch game");
+        puts("B - World Craft");
+        puts("C - Cave Game");
+        puts("D - Notch Game");
         printf("Resposta: ");
         scanf(" %c", &r);
         switch(r){
             case 'A':
-                puts("Resposta Errada");
-                confirmacao = 0;
-                pontos++;
-                break;
-            case 'B':
+            case 'a':
                 puts("Resposta Errada");
                 confirmacao = 0;
                 pontos--;
                 break;
+            case 'B':
+            case 'b':
+                puts("Resposta Errada");
+                confirmacao = 0;
+                pontos--;
+                break;
+            case 'c':
             case 'C':
                 puts("Resposta Correta");
                 confirmacao = 0;
-                pontos--;
+                pontos++;
                 break;
             case 'D':
+            case 'd':
                 puts("Resposta Errada");
                 confirmacao = 0;
                 pontos--;
@@ -39,5 +43,8 @@ int nona_pergunta(int pontos){
         }
     }
     while(confirmacao);
+    printf("Clica no ENTER para prosseguir...");
+    getchar(); // para apanhar com o ultimo \n introduzido, isto seria semelhante a scanf(" %c", input)
+    while( getchar() != '\n' );
     return pontos;
 }
