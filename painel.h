@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <sys/ioctl.h>
 #include <stdlib.h>
 #include <string.h>
 #include "funcoes.h"

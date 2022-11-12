@@ -12,17 +12,9 @@ int main()
     scanf("%s", nome); // pedir ao utilizador pelo nome dele e armazenar na variável nome
     // Código das primeiras (primeira á quarta) perguntas daqui
 
-
-
-
     // até aqui
 
-
-
     // código das seguintes perguntas (as do Samuel) perguntas daqui
-
-
-
 
 
     // até aqui

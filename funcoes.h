@@ -2,6 +2,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
+#ifdef linux
+#include <sys/ioctl.h>
+#endif
+
+#ifdef _WIN32
+int get_terminal_size(){
+    CONSOLE_SCREEN_BUFFER_INFO csbi;
+    int columns, rows;
+
+    GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi);
+    columns = csbi.srWindow.Right - csbi.srWindow.Left + 1;
+    rows = csbi.srWindow.Bottom - csbi.srWindow.Top + 1;
+    int *res = malloc(sizeof(int) * 2);
+    res[0] = columns;
+    res[1] = rows;
+    return res;
+}
+#endif
+
+#ifdef linux
 int *get_terminal_size()
 {
  int cols;          // variável cols provávelmente onde é armazenado a cor do terminal
@@ -25,6 +49,9 @@ int *get_terminal_size()
  res[1] = lines;
  return res;
 }
+#endif
+
+
 
 char *combine_str(const char *dst, const char *src){
     char *res = malloc(strlen(dst) + strlen(src));
@@ -38,6 +65,7 @@ char *combine_str(const char *dst, const char *src){
     strcpy(res, tmp);
     return res;
 }
+
 /*Função com um simples algoritmo para calcular as centenas, dezenas e unidades com base nos sistema
 de base 10 e com base neste algortimo n*10^1 = rn. Com base nisto o algoritmo inverte a multiplicação
 e transforma o resultado de n (rn) novamente em n ficando assim uma unidade.
