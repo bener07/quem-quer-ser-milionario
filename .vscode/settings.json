@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "quinta_pergunta.h": "c",
+        "decima_pergunta.h": "c",
+        "nona_pergunta.h": "c"
+    }
+}

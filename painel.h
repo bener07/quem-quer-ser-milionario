@@ -2,10 +2,16 @@
 #include <stdlib.h>
 #include <string.h>
 #include "funcoes.h"
+#ifdef _WIN32
+char *command = "cls";
+#endif
+#ifdef linux
+char *command = "clear";
+#endif
 
 // Função para escrever o painel no topo do ecrã.
 int painel(char *nome, int pontos){
-    system("clear");
+    system(command);
     int linhas = get_terminal_size()[0];
     int colunas = get_terminal_size()[1]/6;
     char terminal[colunas][linhas];

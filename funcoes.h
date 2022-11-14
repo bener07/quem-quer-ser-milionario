@@ -11,7 +11,7 @@
 #endif
 
 #ifdef _WIN32
-int get_terminal_size(){
+int *get_terminal_size(){
     CONSOLE_SCREEN_BUFFER_INFO csbi;
     int columns, rows;
 
