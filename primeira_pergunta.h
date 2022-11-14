@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int decima_pergunta(int pontos){
+int primeira_pergunta(int pontos){
     int confirmacao;
     do{
         char r;
