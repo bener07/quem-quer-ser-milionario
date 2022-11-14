@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "painel.h"
 #include "primeira_pergunta.h"
 #include "segunda_pergunta.h"
