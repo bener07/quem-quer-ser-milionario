@@ -31,16 +31,15 @@ int main()
     painel(nome, pontos);
     pontos = sexta_pergunta(pontos);
     painel(nome, pontos);
-    pontos = quinta_pergunta(pontos);
-    painel(nome, pontos);
-    // codigo do bernardo
     pontos = setima_pergunta(pontos);
     painel(nome, pontos);
-    pontos = oitava_pergunta(pontos); // executar a função da oitava pergunta, devido ao que a função retorna é associado ao valor dos pontos.
-    painel(nome, pontos); // limpar o ecrã e colocar o painel de pontos no topo
-    pontos = nona_pergunta(pontos); 
-    painel(nome,pontos);
-    pontos = decima_pergunta(pontos);
+    // codigo do bernardo
+    pontos = oitava_pergunta(pontos);
     painel(nome, pontos);
+    pontos = nona_pergunta(pontos); // executar a função da oitava pergunta, devido ao que a função retorna é associado ao valor dos pontos.
+    painel(nome, pontos); // limpar o ecrã e colocar o painel de pontos no topo
+    pontos = decima_pergunta(pontos); 
+    painel(nome,pontos);
+    printf("\nParabéns %s acabaste o jogo com %d pontos!\n", nome, pontos);
     return 0;
 }

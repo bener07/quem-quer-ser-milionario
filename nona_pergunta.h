@@ -16,25 +16,25 @@ int nona_pergunta(int pontos){
             case 'a':
                 puts("Resposta Errada");
                 confirmacao = 0;
-                pontos--;
+                pontos -= 10;
                 break;
             case 'B':
             case 'b':
                 puts("Resposta Errada");
                 confirmacao = 0;
-                pontos--;
+                pontos -= 10;
                 break;
             case 'c':
             case 'C':
                 puts("Resposta Correta");
                 confirmacao = 0;
-                pontos++;
+                pontos += 10;;
                 break;
             case 'D':
             case 'd':
                 puts("Resposta Errada");
                 confirmacao = 0;
-                pontos--;
+                pontos -= 10;
                 break;
             default:
                 printf("Caracter '%c' inválido\n", r);
