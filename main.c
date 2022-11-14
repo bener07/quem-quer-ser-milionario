@@ -3,7 +3,7 @@
 #include "decima_pergunta.h"
 #include "nona_pergunta.h"
 #include "oitava_pergunta.h"
-
+// hello world
 int main()
 {
     int pontos = 0; // variável pontos onde vão ser incrementados e decrementados
