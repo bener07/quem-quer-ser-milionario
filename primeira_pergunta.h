@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int decima_pergunta(int pontos){
+int primeira_pergunta(int pontos){
     int confirmacao;
     do{
         char r;
@@ -16,7 +16,7 @@ int decima_pergunta(int pontos){
             case 'a':
                 puts("Resposta Errada");
                 confirmacao = 0;
-                pontos++;
+                pontos--;
                 break;
             case 'B':
             case 'b':
@@ -34,7 +34,7 @@ int decima_pergunta(int pontos){
             case 'd':
                 puts("Resposta Certo");
                 confirmacao = 0;
-                pontos--;
+                pontos++;
                 break;
             default:
                 printf("Caracter '%c' inválido\n", r);
