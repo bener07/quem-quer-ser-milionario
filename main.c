@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "painel.h"
-#include "décima_pergunta.h"
+#include "decima_pergunta.h"
 #include "nona_pergunta.h"
 #include "oitava_pergunta.h"
 
