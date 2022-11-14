@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-int oitava_pergunta(int pontos){
+int decima_pergunta(int pontos){
     int confirmacao;
     do{
         char r;
-        puts("No mincraft vanilla qual o Mob mais Forte?");
-        puts("A - Wither");
-        puts("B - Ender Dragon");
-        puts("C - Herobrine");
-        puts("D - Warden");
+        puts("Qual o animal mais adorado do jogo?");
+        puts("A - Lobo");
+        puts("B - Cavalo");
+        puts("C - Cão");
+        puts("D - Gato");
         printf("Resposta: ");
         scanf(" %c", &r);
         switch(r){
