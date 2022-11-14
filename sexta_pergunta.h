@@ -14,8 +14,7 @@ int decima_pergunta(int pontos){
         switch(r){
             case 'A':
             case 'a':
-                puts("Resposta Errada
-                ");
+                puts("Resposta Errada");
                 confirmacao = 0;
                 pontos--;
                 break;
